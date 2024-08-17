@@ -7,9 +7,9 @@ import Button from "@mui/material/Button";
 export const AddContract = () => {
   return (
     <>
-      {/* <AreasList/>
+      <AreasList/>
 <CitiesList/>
-<LocationsList/> */}
+<LocationsList/>
       <Grid item md={12} alignItems="center">
         <Button variant="contained">Save</Button>
       </Grid>

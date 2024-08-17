@@ -10,17 +10,19 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 export default function Sidebar({ open, toggleDrawer }) {
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation">
-      <Button
+      
+      <ArrowBackIosIcon
         onClick={() => {
           toggleDrawer();
         }}
       >
         Close
-      </Button>
+      </ArrowBackIosIcon>
       <Divider />
       <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
